@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.RadioTest" time="0.007" tests="11" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.RadioTest" time="0.016" tests="11" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\tpech\AppData\Local\Temp\surefire5906987006737712506\surefirebooter729092539489791307.jar C:\Users\tpech\AppData\Local\Temp\surefire5906987006737712506 2021-04-08T19-43-42_157-jvmRun1 surefire15639192683506101893tmp surefire_011175846754568983296tmp"/>
+    <property name="sun.java.command" value="C:\Users\tpech\AppData\Local\Temp\surefire9973395355012643950\surefirebooter15584430600449635072.jar C:\Users\tpech\AppData\Local\Temp\surefire9973395355012643950 2021-04-08T22-34-36_591-jvmRun1 surefire8736130823585515597tmp surefire_013743942222137100471tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\tpech\OneDrive\Desktop\JavaJacoco\Java261Maven\target\test-classes;C:\Users\tpech\OneDrive\Desktop\JavaJacoco\Java261Maven\target\classes;C:\Users\tpech\.m2\repository\org\junit\jupiter\junit-jupiter\5.4.2\junit-jupiter-5.4.2.jar;C:\Users\tpech\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\tpech\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\tpech\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\tpech\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\tpech\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.4.2\junit-jupiter-params-5.4.2.jar;C:\Users\tpech\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\tpech\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\tpech\AppData\Local\Temp\surefire5906987006737712506\surefirebooter729092539489791307.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\tpech\AppData\Local\Temp\surefire9973395355012643950\surefirebooter15584430600449635072.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.2+7-27"/>
@@ -56,15 +56,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="nextNormalJob" classname="ru.netology.RadioTest" time="0.001"/>
-  <testcase name="minusNormalJob" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="prevNormalJob" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="prevLoop" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="plusNormalJob" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setNumberStation" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="crossingPlusBorder" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setNumberStationOverMax" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="setNumberStationOverMin" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="nextLoop" classname="ru.netology.RadioTest" time="0"/>
-  <testcase name="crossingMinusBorder" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="borderStationMax" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="borderStationMin" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="setStationLowerMin" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="setStationHigherMax" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchToNextLoop" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchVolumeUp" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="setStation" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchToNext" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchToPrev" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchVolumeDown" classname="ru.netology.RadioTest" time="0"/>
+  <testcase name="switchToPrevLoop" classname="ru.netology.RadioTest" time="0"/>
 </testsuite>
