@@ -5,6 +5,24 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RadioTest {
+    @Test
+public void shouldUseConstructor() {
+       Radio radio = new Radio(
+        100,
+        1,
+        100,
+        0,
+        10,
+        0
+        );
+        assertEquals(100, radio.getCurrentVolume());
+        }
+
+@Test
+public void shouldUseNoArgsConstructor() {
+        Radio radio = new Radio();
+        assertEquals(22, radio.getCurrentVolume());
+        }
 
     @Test
     void setStation() {
@@ -46,7 +64,7 @@ class RadioTest {
     @Test
     void switchToNextLoop() {
         Radio volna = new Radio();
-        volna.setCurrentStation(9);
+        volna.setCurrentStation(10);
         volna.switchStationNext();
         assertEquals(0, volna.getCurrentStation());
     }
@@ -56,7 +74,7 @@ class RadioTest {
         Radio volna = new Radio();
         volna.setCurrentStation(0);
         volna.switchStationPrev();
-        assertEquals(9, volna.getCurrentStation());
+        assertEquals(10, volna.getCurrentStation());
     }
 
     @Test
@@ -80,6 +98,26 @@ class RadioTest {
         Radio volna = new Radio();
         volna.setCurrentVolume(1);
         assertEquals(1, volna.getCurrentVolume());
+    }
+
+    @Test
+    void setVolumeNormal() {
+        Radio volna = new Radio();
+        volna.setCurrentVolume(100);
+        assertEquals(100, volna.getCurrentVolume());
+    }
+
+    @Test
+    void setVolumeHigh() {
+        Radio volna = new Radio();
+        volna.setCurrentVolume(101);
+        assertEquals(22, volna.getCurrentVolume());
+    }
+    @Test
+    void setVolumeLow() {
+        Radio volna = new Radio();
+        volna.setCurrentVolume(-1);
+        assertEquals(22, volna.getCurrentVolume());
     }
 
     @Test
@@ -118,7 +156,7 @@ class RadioTest {
     @Test
     void switchToNextVolumeLoop() {
         Radio volna = new Radio();
-        volna.setCurrentVolume(10);
+        volna.setCurrentVolume(100);
         volna.volumeUp();
         assertEquals(0, volna.getCurrentVolume());
     }
@@ -128,7 +166,7 @@ class RadioTest {
         Radio volna = new Radio();
         volna.setCurrentVolume(0);
         volna.volumeDown();
-        assertEquals(10, volna.getCurrentVolume());
+        assertEquals(100, volna.getCurrentVolume());
     }
 
     @Test
