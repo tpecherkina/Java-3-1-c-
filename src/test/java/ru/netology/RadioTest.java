@@ -1,5 +1,6 @@
-package ru.netology;
+package ru.netology.lombok;
 
+import lombok.AllArgsConstructor;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
