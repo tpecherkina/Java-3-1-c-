@@ -64,13 +64,13 @@ public class Radio {
         }
     }
 
-        public void volumeDown() {
-            if (currentVolume == minVolume) {
-                currentVolume = maxVolume;
-                return;
-            } else {
-                currentVolume--;
-            }
-
+    public void volumeDown() {
+        if (currentVolume == minVolume) {
+            currentVolume = maxVolume;
+            return;
+        } else {
+            currentVolume--;
         }
+
     }
+}

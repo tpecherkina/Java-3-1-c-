@@ -138,6 +138,7 @@ class RadioTest {
         volna.volumeUp();
         assertEquals(0, volna.getCurrentStation());
     }
+
     @Test
     void setVolumeLowerMin() {
         Radio volna = new Radio();
