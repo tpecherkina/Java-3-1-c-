@@ -56,8 +56,8 @@ public class Radio {
     }
 
     public void volumeUp() {
-        if (currentVolume == maxVolume) {
-            currentVolume = minVolume;
+        if (currentVolume <= maxVolume) {
+            currentVolume >= minVolume;
             return;
         } else {
             currentVolume++;
